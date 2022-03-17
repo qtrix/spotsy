@@ -1,3 +1,6 @@
+
+![Company Logo](https://user-images.githubusercontent.com/80626049/158806439-f1e98f74-02b8-4af8-881c-ca94aacbb152.png)
+
 # Spotsy
 Spotsy este o platforma mobila destinata conducatorilor auto cu scopul de a-i ajuta in gasirea unui loc de parcare intr-un oras supraaglomerat.
 
@@ -7,3 +10,5 @@ In fiecare parcare cu care firma LockIceSmiths colaboreaza vor exista camere pen
 
 # Wireframe
 Link :  https://www.justinmind.com/usernote/tests/70427326/70428184/70428294/index.html
+
+
