@@ -1,5 +1,6 @@
+![download](https://user-images.githubusercontent.com/80626049/159640392-7b820fd6-dad2-4677-b69b-8ef6c3418e99.svg)
 
-![Company Logo](https://user-images.githubusercontent.com/80626049/158806439-f1e98f74-02b8-4af8-881c-ca94aacbb152.png)
+
 
 # Spotsy
 Spotsy este o platforma mobila destinata conducatorilor auto cu scopul de a-i ajuta in gasirea unui loc de parcare intr-un oras supraaglomerat.
