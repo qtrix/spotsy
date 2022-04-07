@@ -12,4 +12,7 @@ In fiecare parcare cu care firma LockIceSmiths colaboreaza vor exista camere pen
 # Wireframe
 Link :  https://www.justinmind.com/usernote/tests/70427326/70428184/70428294/index.html
 
+Tehnologii folosite:
+  Flutter
+  Firebase
 
