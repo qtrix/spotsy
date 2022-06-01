@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spotsy/screens/login_page.dart';
-
+import 'package:spotsy/screens/register_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class WelcomePage extends StatefulWidget {
@@ -43,6 +43,10 @@ class _WelcomePageState extends State<WelcomePage> {
 
   Widget _signUpButton() {
     return InkWell(
+      onTap: () {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => SignUpPage()));
+      },
       child: Container(
         width: MediaQuery.of(context).size.width,
         padding: EdgeInsets.symmetric(vertical: 13),
@@ -81,25 +85,6 @@ class _WelcomePageState extends State<WelcomePage> {
             ),
           ]),
     );
-  }
-
-  Widget _logo() {
-    return InkWell(
-        child: new Padding(
-            padding: EdgeInsets.only(top: 50),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              mainAxisSize: MainAxisSize.max,
-              children: <Widget>[
-                Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Image.asset(
-                    'package:flutter_login_signup/images/logo.png',
-                    height: 30,
-                  ),
-                ),
-              ],
-            )));
   }
 
   @override
