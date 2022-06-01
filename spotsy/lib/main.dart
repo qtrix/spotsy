@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:register_page.dart';
+import 'package:spotsy/screens/register_page.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -65,7 +65,7 @@ class HomePage extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => SignupPage()));
+                              builder: (context) => SignUpPage()));
                     },
                     color: Color(0xff0095FF),
                     shape: RoundedRectangleBorder(
@@ -80,10 +80,10 @@ class HomePage extends StatelessWidget {
                   )
                 ],
               )
-            ],
+            
           ),
         ),
       ),
-    );
+    
   }
 }
