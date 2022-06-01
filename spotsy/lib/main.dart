@@ -6,7 +6,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:spotsy/screens/login_page.dart';
 import 'package:spotsy/services/firebase_auth_methods.dart';
-
 import 'package:spotsy/firebase/firebase_options.dart';
 import 'screens/welcomePage.dart';
 
