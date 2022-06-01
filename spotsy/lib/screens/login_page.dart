@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
-
+import 'package:spotsy/screens/register_page.dart';
 import 'package:spotsy/widget/bezierContainer.dart';
 
 class LoginPage extends StatefulWidget {
@@ -86,6 +86,10 @@ class _LoginPageState extends State<LoginPage> {
 
   Widget _createAccountLabel() {
     return InkWell(
+      onTap: () {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => SignUpPage()));
+      },
       child: Container(
         margin: EdgeInsets.symmetric(vertical: 20),
         padding: EdgeInsets.all(15),
