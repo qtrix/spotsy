@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:spotsy/firebase/secrets.dart'; // Stores the Google Maps API Key
 import 'package:flutter_polyline_points/flutter_polyline_points.dart';
@@ -5,6 +6,8 @@ import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'dart:math' show Random, asin, cos, sqrt;
+
+import 'package:spotsy/screens/welcomePage.dart';
 
 class UserScreen extends StatelessWidget {
   @override
@@ -48,8 +51,14 @@ class _MapViewState extends State<MapView> {
   late PolylinePoints polylinePoints;
   Map<PolylineId, Polyline> polylines = {};
   List<LatLng> polylineCoordinates = [];
-
+//sign out
   final _scaffoldKey = GlobalKey<ScaffoldState>();
+  final FirebaseAuth auth = FirebaseAuth.instance;
+  signOut() async {
+    await auth.signOut();
+    Navigator.pushReplacement(
+        context, MaterialPageRoute(builder: (context) => WelcomePage()));
+  }
 
   // Method for retrieving the current location
   _getCurrentLocation() async {
@@ -236,6 +245,16 @@ class _MapViewState extends State<MapView> {
       width: width,
       child: Scaffold(
         key: _scaffoldKey,
+        //sign out
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            signOut();
+          },
+          child: Icon(
+            Icons.logout_rounded,
+          ),
+        ),
+        backgroundColor: Colors.green,
         body: Stack(
           children: <Widget>[
             // Map View
